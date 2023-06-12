@@ -15,5 +15,12 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     currencyKey : process.env.CURRENCY_TOKEN
+  },
+  vite: {
+    server: {
+      fs: {
+        strict: false
+      }
+    }
   }
 })
