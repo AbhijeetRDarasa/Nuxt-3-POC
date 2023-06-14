@@ -1,5 +1,8 @@
 <template>
   <div>
+    <Caraousel></Caraousel>
+  </div>
+  <div>
     <h2>Home</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -14,9 +17,14 @@
       eaque!
     </p>
   </div>
+
 </template>
 
-<script setup></script>
+<script setup>
+import Caraousel from '~/components/Caraousel.vue';
+
+
+</script>
 
 <style  scoped>
 

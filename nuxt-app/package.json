@@ -13,5 +13,12 @@
     "@nuxtjs/tailwindcss": "^6.7.0",
     "@types/node": "^18",
     "nuxt": "^3.5.2"
+  },
+  "dependencies": {
+    "@nuxtjs/vuetify": "^1.12.3",
+    "flowbite": "^1.6.5",
+    "flowbite-vue": "^0.0.12",
+    "nuxt-swiper": "^1.1.0",
+    "nuxt-vuetify": "^1.0.1"
   }
 }
