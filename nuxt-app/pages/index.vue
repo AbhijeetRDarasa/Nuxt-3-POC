@@ -2,7 +2,7 @@
   <div>
     <Caraousel></Caraousel>
   </div>
-  <div>
+  <!-- <div>
     <h2>Home</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -16,7 +16,7 @@
       maxime vitae reprehenderit architecto hic, expedita quos necessitatibus
       eaque!
     </p>
-  </div>
+  </div> -->
 
 </template>
 
