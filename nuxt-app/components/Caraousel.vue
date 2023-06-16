@@ -5,10 +5,10 @@ import img2 from '../assets/12.jpg';
 import img3 from '../assets/13.jpg';
 import img4 from '../assets/14.jpg';
 import img1 from '../assets/football_image.jpg';
-
+import cashback from '../assets/cashback.jpg';
 
 const imglist = {img1,img2,img3,img4,img5};
-const imglist2 = {img5,img2,img3,img4};
+const imglist2 = {cashback,img5,img2,img3,img4};
 
 const loremIpsum = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae"+
       "consectetur iste error veritatis magnam expedita, animi mollitia dolorum a"+
@@ -43,7 +43,7 @@ const loremIpsum = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mo
        dark:hover:bg-red-700 dark:focus:ring-red-800 b1">JOIN NOW</button>
       <img :src=img class="ml-2">
     </SwiperSlide>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination margin"></div>
     </Swiper>
     </div>
 
@@ -66,7 +66,7 @@ const loremIpsum = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Mo
     <SwiperSlide v-for="img in imglist2" :key="img">
       <img :src=img class="mr-6">
       <p class="p3">CASH BACK 5%</p>
-      <p class="p4">View more --></p>
+      <p class="p4">View more </p> 
     </SwiperSlide>
     <div class="swiper-pagination"></div>
     </Swiper>
@@ -102,22 +102,24 @@ img{
 
 .p1{
   position: absolute;
-  font-weight: 600;
-  font-size:36px;
+  font-weight: 700;
+  font-size:30px;
   left:0%;
   color: white;
   margin-top: 4%;
-  width: 50%;
+  width: 55%;
+  font-family: 'Lexend', sans-serif;
 }
 
 .p2{
   position: absolute;
-  font-weight: 500;
-  font-size:14px;
+  font-weight: 400;
+  font-size:16px;
   left:0%;
   color: white;
   margin-top: 9%;
   width: 30%;
+  font-family: 'Lexend', sans-serif;
 }
 
 .p3{
@@ -128,6 +130,7 @@ img{
   color: white;
   margin-top: 16pc;
   width: 50%;
+  font-family: 'Lexend', sans-serif;
 }
 
 .p4{
@@ -138,12 +141,13 @@ img{
   color: white;
   margin-top: 20pc;
   width: 40%;
+  font-family: 'Lexend', sans-serif;
 }
 
 .b1{
   position: absolute;
   width: 15%;
-  margin-top: 14pc;
+  margin-top: 16pc;
   left:5ch
 }
 
@@ -151,11 +155,23 @@ img{
   justify-content: space-evenly ;
 }
 .swiper-pagination {
-    @apply relative mt--1;
+    @apply mt-0;
 }
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: red;
+  opacity: 1;
+}
+
+/* target all bullets */
 .swiper-pagination-bullet {
-    @apply h-1 w-9 rounded-none;
-    background: #EA422E;
+  @apply h-1 w-9 rounded-none;
+  background-color: white;
+  opacity: 1;
+}
+
+.margin{
+  margin-left: -26pc;
 }
 </style>
 
